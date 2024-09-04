@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mulai rekomendasi</title>
+    <link rel="stylesheet" href="stylemulai.css">
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <h1>Gadget Aja!</h1>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Konten Halaman Web Anda akan ditempatkan di sini -->
+    <header>
+        <h1>Sistem Pendukung Keputusan Rekomendasi HP</h1>
+    </header>
+
+    <div class="content">
+        <h2>Pilih Kriteria Anda</h2>
+        <label for="kriteria-harga">Harga:</label>
+        <select id="kriteria-harga">
+            <option value="murah">Murah</option>
+            <option value="sedang">Sedang</option>
+            <option value="mahal">Mahal</option>
+        </select>
+
+        <label for="kriteria-kamera">Kamera:</label>
+        <select id="kriteria-kamera">
+            <option value="standar">Standar</option>
+            <option value="bagus">Bagus</option>
+            <option value="unggul">Unggul</option>
+        </select>
+
+        <button id="rekomendasikan">Rekomendasikan</button>
+
+        <div id="hasil-rekomendasi">
+            <h2>Hasil Rekomendasi:</h2>
+            <p>HP yang direkomendasikan: <span id="nama-hp">-</span></p>
+        </div>
+    </div>
+
+    <footer class="footer2">
+        <div class="footer-content2">
+            <div class="footer-links2">
+                <a href="#">Tentang Kami</a>
+                <a href="#">Kebijakan Privasi</a>
+                <a href="#">Kontak</a>
+            </div>
+            <div class="social-icons2">
+                <a href="#" class="icon-facebook2"></a>
+                <a href="#" class="icon-twitter2"></a>
+                <a href="#" class="icon-instagram2"></a>
+            </div>
+        </div>
+        <p>&copy; 2023 Rekomendasi Handphone. Hak Cipta Dilindungi.</p>
+    </footer>
+
+    <script>
+        document.getElementById("rekomendasikan").addEventListener("click", function () {
+            // Mendapatkan nilai kriteria yang dipilih
+            var kriteriaHarga = document.getElementById("kriteria-harga").value;
+            var kriteriaKamera = document.getElementById("kriteria-kamera").value;
+
+            // Logika sederhana untuk merekomendasikan ponsel
+            var rekomendasi = "HP Rekomendasi";
+
+            if (kriteriaHarga === "murah" && kriteriaKamera === "standar") {
+                rekomendasi = "XIAOMI";
+            } else if (kriteriaHarga === "murah" && kriteriaKamera === "bagus") {
+                rekomendasi = "PocoPhone";
+            } else if (kriteriaHarga === "murah" && kriteriaKamera === "unggul") {
+                rekomendasi = "Samsung";
+            } else if (kriteriaHarga === "sedang" && kriteriaKamera === "standar") {
+                rekomendasi = "Oppo";
+            } else if (kriteriaHarga === "sedang" && kriteriaKamera === "bagus") {
+                rekomendasi = "Redmi";
+            } else if (kriteriaHarga === "sedang" && kriteriaKamera === "unggul") {
+                rekomendasi = "Asus";
+            } else if (kriteriaHarga === "mahal" && kriteriaKamera === "standar") {
+                rekomendasi = "ROG";
+            } else if (kriteriaHarga === "mahal" && kriteriaKamera === "bagus") {
+                rekomendasi = "Iphone 15 Pro Max";
+            } else if (kriteriaHarga === "mahal" && kriteriaKamera === "unggul") {
+                rekomendasi = "Samsung Flip";
+            }
+
+            // Menampilkan hasil rekomendasi
+            document.getElementById("nama-hp").textContent = rekomendasi;
+        });
+    </script>
+</body>
+</html>

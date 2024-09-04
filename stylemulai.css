@@ -1,0 +1,208 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('image/Sync-rafiki.png'); /* Ganti dengan nama file gambar Anda */
+    background-size: 30%; /* Untuk memastikan gambar latar belakang mencakup seluruh area konten */
+    background-repeat: no-repeat; /* Untuk menghindari pengulangan gambar latar belakang */
+    background-position: right top 150px; /* Posisi gambar latar belakang di tengah */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    height: 60px;
+    background-color: #3b66b4;
+    color: rgb(53, 53, 53);
+    font-size: 18px;
+    border-radius: 3px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navbar h1 {
+    margin: 0;
+    margin-top: 9px;
+    color: #fff;
+    font-size: 20px;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar li {
+    margin-top: 9px;
+    margin-right: 20px;
+    border-radius: 10px; /* Tambahkan border radius di sini */
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px; /* Berikan padding untuk membuat area yang lebih besar */
+}
+
+.navbar a:hover {
+    background-color: tomato; /* Ubah warna latar saat dihover */
+    transition: background-color 0.3s ease;
+    border-radius: 10px; /* Tambahkan border radius pada hover */
+}
+
+/* Gaya konten */
+.content {
+    text-align: center;
+    margin: 40px;
+    background-color: transparent; /* Warna latar belakang */
+    padding: 20px; /* Ruang internal */
+    
+}
+
+.content h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Untuk tombol "Mulai Rekomendasi HP" dalam .content */
+.content .mulai-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.content .mulai-button:hover {
+    background-color: #0056b3;
+}
+/* Gaya header */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Gaya konten */
+.content {
+    text-align: center;
+    margin: 20px;
+}
+
+label {
+    font-weight: bold;
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Gaya hasil rekomendasi */
+#hasil-rekomendasi {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#nama-hp {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007BFF;
+}
+
+/* Gaya footer */
+/* footer .footer2 {
+    
+    background-color:  #6375a7;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 16px;
+} */
+
+/* end main.html */
+/* Gaya footer */
+footer {
+    background-color: #6375a7;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed; /* Mengatur posisi footer */
+    bottom: 0; /* Footer selalu di bagian paling bawah */
+    width: 100%; /* Lebar footer mengikuti lebar layar */
+}
+
+.footer-content {
+    max-width: 800px; /* Sesuaikan dengan lebar yang Anda inginkan */
+    margin: 0 auto; /* Membuat footer menjadi tengah horizontal */
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: #fff; /* Warna latar belakang ikon */
+    border-radius: 50%; /* Membuat ikon menjadi lingkaran */
+    text-align: center;
+    line-height: 30px; /* Vertikal tengah ikon */
+    font-size: 20px;
+    color: #333;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* Gaya ikon media sosial (contoh: Facebook, Twitter, Instagram) */
+.icon-facebook:before {
+    content: "\f09a"; /* Unicode untuk ikon Facebook */
+}
+
+.icon-twitter:before {
+    content: "\f099"; /* Unicode untuk ikon Twitter */
+}
+
+.icon-instagram:before {
+    content: "\f16d"; /* Unicode untuk ikon Instagram */
+}
+
